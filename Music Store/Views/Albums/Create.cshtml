@@ -13,18 +13,19 @@
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="GenreId" class="control-label"></label>
-                <input asp-for="GenreId" class="form-control" />
-                <span asp-validation-for="GenreId" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="ArtistId" class="control-label"></label>
-                <select asp-for="ArtistId" class ="form-control" asp-items="ViewBag.ArtistId"></select>
-            </div>
-            <div class="form-group">
                 <label asp-for="Title" class="control-label"></label>
                 <input asp-for="Title" class="form-control" />
                 <span asp-validation-for="Title" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Genre" class="control-label"></label>
+                <input asp-for="Genre" class="form-control" />
+                <span asp-validation-for="Genre" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Artist" class="control-label"></label>
+                <input asp-for="Artist" class="form-control" />
+                <span asp-validation-for="Artist" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="Price" class="control-label"></label>
@@ -33,7 +34,7 @@
             </div>
             <div class="form-group">
                 <label asp-for="AlbumArtUrl" class="control-label"></label>
-                <input asp-for="AlbumArtUrl" class="form-control" />
+                <input asp-for="AlbumArtUrl" accept="image/*" />
                 <span asp-validation-for="AlbumArtUrl" class="text-danger"></span>
             </div>
             <div class="form-group">
